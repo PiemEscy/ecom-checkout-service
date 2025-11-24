@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
     git \
     unzip \
     zip \
+    nano \
     curl \
     libzip-dev \
     libonig-dev \
