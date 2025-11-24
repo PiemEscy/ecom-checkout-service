@@ -11,3 +11,11 @@ else
   exit 1
 fi
 
+# Run Laravel clear inside the PHP container
+if php artisan view:clear && php artisan route:clear && php artisan cache:clear && php artisan config:clear && php artisan config:cache && php artisan clear-compile; then
+  echo "Artisan clear completed successfully."
+else
+  echo "ERROR: Artisan clear failed."
+  exit 1
+fi
+
