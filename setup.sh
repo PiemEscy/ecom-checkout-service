@@ -6,6 +6,13 @@ set -e
 echo "Starting setup for project..."
 
 # ------------------------------
+# 0. Set permissions for Laravel
+# ------------------------------
+echo "Setting permissions..."
+chown -R www-data:www-data /var/www/html
+chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
+
+# ------------------------------
 # 1. Install PHP dependencies
 # ------------------------------
 if composer install --no-dev --optimize-autoloader; then
