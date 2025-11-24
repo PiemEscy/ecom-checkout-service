@@ -17,6 +17,7 @@ The Checkout Service is a microservice responsible for managing product checkout
 - **Database:** MySQL
 - **Authentication:** JWT Token based
 
+---
 
 ## **Project Setup**
 
